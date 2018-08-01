@@ -1,0 +1,29 @@
+.toast {
+  z-index: 99;
+  display: none;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 0;
+  left: 50%;
+  padding: 14px 30px;
+  background: black;
+  transition: opacity .3s;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 90%;
+  &.top {
+    top: 10%;
+  }
+  &.bottom {
+    bottom: 10%;
+  }
+  &.middle {
+    top: 50%;
+  }
+
+  &.show {
+    opacity: 0.8;
+  }
+}
