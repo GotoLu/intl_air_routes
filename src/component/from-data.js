@@ -39,7 +39,7 @@ class FromData extends Component {
         onMouseLeave={this.handleLeave}
       >
         {fromData}
-        <i className="iconfont triangle-down" />
+        <i className={cn({'iconfont triangle-down': true, rotate: show })} />
         <ul className={cn({show: show})}>
           {
             fromDataList.map((li, i) => (
